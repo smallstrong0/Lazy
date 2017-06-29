@@ -1,0 +1,6 @@
+我的-2.png=a
+我的-3.png=b
+我的-4.png=c
+我的-5.png=d
+我的-6.png=e
+我的-7.png=f
