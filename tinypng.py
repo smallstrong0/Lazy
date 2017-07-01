@@ -44,10 +44,15 @@ def compress_path(path,suf):
 
 
 def run():
-	compress_path(os.getcwd()+"/hdpi","hdpi")		
-	compress_path(os.getcwd()+"/xhdpi","xhdpi")		
-	compress_path(os.getcwd()+"/xxhdpi","xxhdpi")	
-	compress_path(os.getcwd()+"/xxxhdpi","xxxhdpi")	
+	if os.path.exists(os.getcwd()+"/hdpi"): 
+		compress_path(os.getcwd()+"/hdpi","hdpi")
+	if  os.path.exists(os.getcwd()+"/xhdpi"): 		
+		compress_path(os.getcwd()+"/xhdpi","xhdpi")	
+	if  os.path.exists(os.getcwd()+"/xxhdpi"): 		
+		compress_path(os.getcwd()+"/xxhdpi","xxhdpi")	
+	if  os.path.exists(os.getcwd()+"/xxxhdpi"): 		
+		compress_path(os.getcwd()+"/xxxhdpi","xxxhdpi")	
+	
 	print '\033[1;32;40m'
 	print "ok\npower by smallstrong"
 	print '\033[0m'

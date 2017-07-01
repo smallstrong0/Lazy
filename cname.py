@@ -5,7 +5,7 @@ import os
 import sys
 
 
-def findSourceAndRenameIt(path,oldname,newname,type):
+def find_source_and_rename_it(path,oldname,newname,type):
 	for file in os.listdir(path):
    		if file == oldname:
    			os.rename(os.path.join(path,file),os.path.join(path,newname+"."+type))
@@ -13,14 +13,16 @@ def findSourceAndRenameIt(path,oldname,newname,type):
 
 def rename(oldname,newname,type):# 准备找到文件中 然后找到文件换名字
 	print oldname + "   change name to ====>     " + newname+"."+type
-	findSourceAndRenameIt(os.getcwd()+"/hdpi",oldname,newname,type)
-	findSourceAndRenameIt(os.getcwd()+"/xhdpi",oldname,newname,type)
-	findSourceAndRenameIt(os.getcwd()+"/xxhdpi",oldname,newname,type)
-	findSourceAndRenameIt(os.getcwd()+"/xxxhdpi",oldname,newname,type)
-	
 
-	
-     
+	if os.path.exists(os.getcwd()+"/hdpi"): 
+		find_source_and_rename_it(os.getcwd()+"/hdpi",oldname,newname,type)
+	if  os.path.exists(os.getcwd()+"/xhdpi"): 		
+		find_source_and_rename_it(os.getcwd()+"/xhdpi",oldname,newname,type)
+	if  os.path.exists(os.getcwd()+"/xxhdpi"): 		
+		find_source_and_rename_it(os.getcwd()+"/xxhdpi",oldname,newname,type)
+	if  os.path.exists(os.getcwd()+"/xxxhdpi"): 		
+		find_source_and_rename_it(os.getcwd()+"/xxxhdpi",oldname,newname,type)
+	 
 
 def run():
 	f = open(os.getcwd()+"/name.txt", 'r')
