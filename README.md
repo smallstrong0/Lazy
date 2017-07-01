@@ -2,11 +2,11 @@
 
 > Use
 
-1. 将工程中的3个Python文件copy到UI设计师给的hdpi,xhdpi,xxhdpi，xxxhdpi的同级目录下。
+1. 将工程中的3个Python文件copy到UI设计师给的hdpi,xhdpi,xxhdpi，xxxhdpi的同级目录下（可以是一套图，也可以是多套图，请保持多套图中的同一文件命名相同，谢谢）。
 
-2. 根据提示依次运行，python list.py  python cname.py  python tinypng.py。  
+2. 根据提示依次运行，python list.py 之后在name.txt里面进行翻译图片名字之后运行python cname.py进行更名之后运行python tinypng.py对图片进行压缩处理。ok,在命令行中我写了大量提示，可以参照提示进行步骤。
 
-3. 欢迎star
+3. 我在我的mac上运行正常，但是一定还存在很多兼容问题 ~ 欢迎issus & star
 
 ## License
 
