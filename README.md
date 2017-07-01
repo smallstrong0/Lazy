@@ -1,5 +1,11 @@
 ### Lazy是一个Python脚本处理UI设计师给我们用sketch切出的图进行一键更名，批量压缩的工具。----- 解放双手，值得拥有。
 
+> Prepare
+
+1. 自行安装python环境
+2. pip install tinify（https://github.com/tinify/tinify-python）
+3. https://tinypng.com/developers 去官网注册账户拿到自己的api_key
+
 > Use
 
 1. 将工程中的3个Python文件copy到UI设计师给的hdpi,xhdpi,xxhdpi，xxxhdpi的同级目录下（可以是一套图，也可以是多套图，请保持多套图中的同一文件命名相同，谢谢）。
