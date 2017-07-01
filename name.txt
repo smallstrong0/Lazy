@@ -1,2 +1,2 @@
-a.png
-google.jpg
+google.jpg=a
+我的-2.png=b

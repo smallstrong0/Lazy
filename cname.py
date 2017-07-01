@@ -26,8 +26,8 @@ def run():
 	f = open(os.getcwd()+"/name.txt", 'r')
 	for line in f.xreadlines():
 		list = line.split("=",1)
-		type = line.split(".",1)
-		rename(list[0],list[1].replace("\n",""),type[1])
+		type = list[0].split(".",1)[1]
+		rename(list[0],list[1].replace("\n",""),type)
 	f.close()
 	print '\033[1;32;40m'
 	print "更名成功:请\n1.运行python tinypng.py进行压缩图片，请耐心等待\n2.压缩完成之后会出现Android的四个资源文件夹，东西在里面自行copy"

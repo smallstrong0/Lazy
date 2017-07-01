@@ -18,7 +18,7 @@ def run():
 				print name
 	f.close()
 	print '\033[1;32;40m'
-	print "请\n1.打开当前目录下的name.txt\n2.输入重新更改的名字(例子：demo.png=smallstrong)\n3.注意每一行更改一个文件的名字，更名后缀png或者jpg不需要加\n4.写完之后运行python cname.py命令进行文件更名"
+	print "请\n1.打开当前目录下的name.txt\n2.输入重新更改的名字(例子：demo.png=smallstrong)\n3.注意每一行更改一个文件的名字，不要有空行记住啊亲，更名后缀png或者jpg不需要加\n4.写完之后运行python cname.py命令进行文件更名"
 	print '\033[0m'
 	
 
